@@ -1,0 +1,18 @@
+{
+  "name": "ntask-web",
+  "version": "1.0.0",
+  "description": "Task manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run server",
+    "server": "http-server public -p 3001",
+    "build": "browserify src -o public/js/app.js"
+  },
+  "author": "Manoela Cirilo <manoelacirilo04@gmail.com>",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "browserify": "^17.0.0",
+    "http-server": "^14.1.1",
+    "tiny-emitter": "^2.1.0"
+  }
+}
